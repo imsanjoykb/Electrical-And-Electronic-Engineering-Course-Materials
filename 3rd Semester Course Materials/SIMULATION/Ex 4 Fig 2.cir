@@ -1,0 +1,23 @@
+* E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 2.sch
+
+* Schematics Version 9.2
+* Wed Jan 31 17:01:09 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V2 0 20 0.1 
++ LIN V_V1 3 10 1 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 4 Fig 2.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

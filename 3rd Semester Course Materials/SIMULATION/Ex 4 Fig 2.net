@@ -1,0 +1,8 @@
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 0V
+R_R1         $N_0003 $N_0002  1k  
+V_V2         $N_0002 0 20V
+M_M1         $N_0003 $N_0001 0 0 IRF150

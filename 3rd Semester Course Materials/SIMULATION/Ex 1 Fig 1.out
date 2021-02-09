@@ -1,0 +1,129 @@
+
+**** 01/31/18 19:58:04 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 1 Fig 1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Jan 31 19:58:00 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V1 -5 10 0.1 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 1 Fig 1.net"
+
+
+
+**** INCLUDING "Ex 1 Fig 1.net" ****
+* Schematics Netlist *
+
+
+
+D_D1         $N_0001 $N_0002 D1N4001 
+V_V1         $N_0001 0 0V
+R_R1         0 $N_0002  1k  
+
+**** RESUMING "Ex 1 Fig 1.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 19:58:04 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 1 Fig 1.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4001         
+          IS   14.110000E-09 
+           N    1.984        
+         IKF   94.81         
+          BV   75            
+         IBV   10.000000E-06 
+          RS     .03389      
+          TT    5.700000E-06 
+         CJO   25.890000E-12 
+          VJ     .3245       
+           M     .44         
+
+
+**** 01/31/18 19:58:04 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 1 Fig 1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)-22.78E-21                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         2.278E-23
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 01/31/18 19:58:04 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 1 Fig 1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1      
+MODEL        D1N4001   
+ID           0.00E+00 
+VD           2.28E-20 
+REQ          3.64E+06 
+CAP          2.75E-11 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

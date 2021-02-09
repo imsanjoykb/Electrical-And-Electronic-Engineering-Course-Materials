@@ -1,0 +1,182 @@
+
+**** 01/31/18 19:07:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 3 Fig 1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Sun Jan 28 13:10:05 2018
+
+
+
+** Analysis setup **
+.ac DEC 20 10Hz 1MegHz
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 3 Fig 1.net"
+
+
+
+**** INCLUDING "Ex 3 Fig 1.net" ****
+* Schematics Netlist *
+
+
+
+Q_Q2         $N_0002 $N_0001 $N_0003 Q2N3904
+R_RL         0 o  3.3k  
+C_C4         o $N_0002  47u  
+C_C3         0 $N_0003  47u  
+R_R8         $N_0002 $N_0004  3.3k  
+R_R9         0 $N_0003  2.2k  
+R_R7         0 $N_0001  22k  
+R_R6         $N_0001 $N_0004  57.3k  
+C_C5         $N_0001 $N_0005  47u  
+R_R5         0 $N_0006  2.2k  
+R_R4         $N_0005 $N_0004  3.3k  
+R_R2         $N_0007 $N_0004  57.3k  
+R_R3         0 $N_0007  22k  
+R_R1         i $N_0008  150  
+C_C1         $N_0008 $N_0007  47u  
+V_Vcc         $N_0004 0 10V
+C_C2         0 $N_0006  47u  
+Q_Q1         $N_0005 $N_0007 $N_0006 Q2N3904
+V_Vin         i 0 DC 0V AC 1mV 
+
+**** RESUMING "Ex 3 Fig 1.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 19:07:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 3 Fig 1.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 01/31/18 19:07:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 3 Fig 1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    i)    0.0000  (    o)    0.0000  ($N_0001)    2.6698                       
+
+($N_0002)    7.0096                   ($N_0003)    2.0081                       
+
+($N_0004)   10.0000                   ($N_0005)    7.0096                       
+
+($N_0006)    2.0081                   ($N_0007)    2.6698                       
+
+($N_0008)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vcc       -2.068E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   2.07E-02  WATTS
+
+
+**** 01/31/18 19:07:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 3 Fig 1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q2        Q_Q1      
+MODEL        Q2N3904     Q2N3904   
+IB           6.58E-06    6.58E-06 
+IC           9.06E-04    9.06E-04 
+VBE          6.62E-01    6.62E-01 
+VBC         -4.34E+00   -4.34E+00 
+VCE          5.00E+00    5.00E+00 
+BETADC       1.38E+02    1.38E+02 
+GM           3.46E-02    3.46E-02 
+RPI          4.58E+03    4.58E+03 
+RX           1.00E+01    1.00E+01 
+RO           8.65E+04    8.65E+04 
+CBE          1.69E-11    1.69E-11 
+CBC          2.02E-12    2.02E-12 
+CJS          0.00E+00    0.00E+00 
+BETAAC       1.58E+02    1.58E+02 
+CBX/CBX2     0.00E+00    0.00E+00 
+FT/FT2       2.92E+08    2.92E+08 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

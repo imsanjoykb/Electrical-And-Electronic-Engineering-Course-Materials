@@ -1,0 +1,16 @@
+* Schematics Netlist *
+
+
+
+R_R1         i $N_0001  150  
+V_VCC         $N_0002 0 10v
+C_C2         0 $N_0003  47u  
+C_C3         o $N_0004  47u  
+R_RE         0 $N_0003  2.2k  
+R_RC         $N_0004 $N_0002  3.3k  
+Q_Q1         $N_0004 $N_0005 $N_0003 Q2N3904
+C_C1         $N_0001 $N_0005  47u  
+R_R2         0 $N_0005  22k  
+R_R3         $N_0005 $N_0002  57.3k  
+R_RL         0 o  3.3k  
+V_V4         i 0 DC 0V AC 1mv 

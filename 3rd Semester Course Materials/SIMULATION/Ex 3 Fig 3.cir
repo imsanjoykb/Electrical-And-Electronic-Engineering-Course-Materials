@@ -1,0 +1,22 @@
+* E:\STUDY\3rd Semester\SIMULATION\Ex 3 Fig 3.sch
+
+* Schematics Version 9.2
+* Wed Jan 31 15:36:57 2018
+
+
+
+** Analysis setup **
+.ac DEC 20 10Hz 1MegHz
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 3 Fig 3.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

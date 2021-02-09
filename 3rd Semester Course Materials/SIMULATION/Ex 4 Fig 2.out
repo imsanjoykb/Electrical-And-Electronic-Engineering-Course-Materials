@@ -1,0 +1,178 @@
+
+**** 01/31/18 19:00:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Jan 31 17:01:09 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V2 0 20 0.1 
++ LIN V_V1 3 10 1 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 4 Fig 2.net"
+
+
+
+**** INCLUDING "Ex 4 Fig 2.net" ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 0V
+R_R1         $N_0003 $N_0002  1k  
+V_V2         $N_0002 0 20V
+M_M1         $N_0003 $N_0001 0 0 IRF150
+
+**** RESUMING "Ex 4 Fig 2.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 19:00:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 2.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 01/31/18 19:00:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   ($N_0002)   20.0000                       
+
+($N_0003)   19.9550                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -4.490E-05
+
+    TOTAL POWER DISSIPATION   8.98E-04  WATTS
+
+
+**** 01/31/18 19:00:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M1      
+MODEL        IRF150    
+ID           4.49E-05 
+VGS          0.00E+00 
+VDS          2.00E+01 
+VBS          0.00E+00 
+VTH          2.83E+00 
+VDSAT        0.00E+00 
+Lin0/Sat1   -1.00E+00 
+if          -1.00E+00 
+ir          -1.00E+00 
+TAU         -1.00E+00 
+GM           0.00E+00 
+GDS          2.25E-06 
+GMB          0.00E+00 
+CBD          6.34E-10 
+CBS          2.90E-19 
+CGSOV        2.71E-09 
+CGDOV        5.04E-10 
+CGBOV        0.00E+00 
+CGS          0.00E+00 
+CGD          0.00E+00 
+CGB          2.07E-10 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .09
+

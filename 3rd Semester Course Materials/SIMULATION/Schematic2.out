@@ -1,0 +1,160 @@
+
+**** 01/31/18 22:55:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Schematic2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Sun Jan 28 12:15:22 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V1 0 10 .1 
++ LIN I_I1 0 1mA .2mA 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Schematic2.net"
+
+
+
+**** INCLUDING Schematic2.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 $N_0002 0V
+Q_Q1         $N_0001 $N_0003 0 Q2N2222
+I_I1         $N_0003 $N_0002 DC 0A  
+
+**** RESUMING Schematic2.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 22:55:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Schematic2.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE   22.010000E-12 
+         MJE     .377        
+         CJC    7.306000E-12 
+         MJC     .3416       
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 01/31/18 22:55:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Schematic2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001) 97.87E-15                   ($N_0002) 97.87E-15                       
+
+($N_0003) 118.9E-15                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.103E-26
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 01/31/18 22:55:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Schematic2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1      
+MODEL        Q2N2222   
+IB           5.65E-26 
+IC           1.47E-25 
+VBE          1.19E-13 
+VBC          2.10E-14 
+VCE          9.79E-14 
+BETADC       1.47E-05 
+GM           2.10E-24 
+RPI          2.32E+12 
+RX           1.00E+01 
+RO           6.43E+11 
+CBE          2.20E-11 
+CBC          7.31E-12 
+CJS          0.00E+00 
+BETAAC       4.87E-12 
+CBX/CBX2     0.00E+00 
+FT/FT2       1.14E-14 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .17
+

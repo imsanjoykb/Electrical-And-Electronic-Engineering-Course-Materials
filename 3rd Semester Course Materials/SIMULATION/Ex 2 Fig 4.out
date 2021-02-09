@@ -1,0 +1,171 @@
+
+**** 01/31/18 19:26:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 2 Fig 4.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Sun Jan 28 12:38:35 2018
+
+
+
+** Analysis setup **
+.ac DEC 20 10Hz 10MegHz
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 2 Fig 4.net"
+
+
+
+**** INCLUDING "Ex 2 Fig 4.net" ****
+* Schematics Netlist *
+
+
+
+R_R1         i $N_0001  150  
+V_VCC         $N_0002 0 10v
+C_C2         0 $N_0003  47u  
+C_C3         o $N_0004  47u  
+R_RE         0 $N_0003  2.2k  
+R_RC         $N_0004 $N_0002  3.3k  
+Q_Q1         $N_0004 $N_0005 $N_0003 Q2N3904
+C_C1         $N_0001 $N_0005  47u  
+R_R2         0 $N_0005  22k  
+R_R3         $N_0005 $N_0002  57.3k  
+R_RL         0 o  3.3k  
+V_V4         i 0 DC 0V AC 1mv 
+
+**** RESUMING "Ex 2 Fig 4.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 19:26:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 2 Fig 4.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 01/31/18 19:26:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 2 Fig 4.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    i)    0.0000  (    o)    0.0000  ($N_0001)    0.0000                       
+
+($N_0002)   10.0000                   ($N_0003)    2.0081                       
+
+($N_0004)    7.0096                   ($N_0005)    2.6698                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.034E-03
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.03E-02  WATTS
+
+
+**** 01/31/18 19:26:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 2 Fig 4.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1      
+MODEL        Q2N3904   
+IB           6.58E-06 
+IC           9.06E-04 
+VBE          6.62E-01 
+VBC         -4.34E+00 
+VCE          5.00E+00 
+BETADC       1.38E+02 
+GM           3.46E-02 
+RPI          4.58E+03 
+RX           1.00E+01 
+RO           8.65E+04 
+CBE          1.69E-11 
+CBC          2.02E-12 
+CJS          0.00E+00 
+BETAAC       1.58E+02 
+CBX/CBX2     0.00E+00 
+FT/FT2       2.92E+08 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .09
+

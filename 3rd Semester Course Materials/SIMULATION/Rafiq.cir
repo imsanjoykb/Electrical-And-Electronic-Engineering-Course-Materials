@@ -1,0 +1,22 @@
+* E:\STUDY\3rd Semester\SIMULATION\Rafiq.sch
+
+* Schematics Version 9.2
+* Wed Mar 21 23:51:33 2018
+
+
+
+** Analysis setup **
+.ac LIN 101 10 1.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Rafiq.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

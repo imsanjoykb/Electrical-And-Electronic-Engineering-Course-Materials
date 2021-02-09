@@ -1,0 +1,143 @@
+
+**** 01/31/18 19:19:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Jan 31 16:45:14 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V2 0 20 0.1 
++ LIN V_V1 -4 0 1 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 4 Fig 1.net"
+
+
+
+**** INCLUDING "Ex 4 Fig 1.net" ****
+* Schematics Netlist *
+
+
+
+V_V2         $N_0001 0 10V
+V_V1         $N_0002 0 0V
+R_R1         $N_0003 $N_0001  1k  
+J_J1         $N_0003 $N_0002 0 J2N3819 
+
+**** RESUMING "Ex 4 Fig 1.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 19:19:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 1.sch
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N3819         
+               NJF             
+         VTO   -3            
+        BETA    1.304000E-03 
+      LAMBDA    2.250000E-03 
+          IS   33.570000E-15 
+         ISR  322.400000E-15 
+       ALPHA  311.700000E-06 
+          VK  243.6          
+          RD    1            
+          RS    1            
+         CGD    1.600000E-12 
+         CGS    2.414000E-12 
+           M     .3622       
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF    9.882000E-18 
+
+
+**** 01/31/18 19:19:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   10.0000                   ($N_0002)    0.0000                       
+
+($N_0003)    1.4541                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -8.546E-03
+    V_V1         5.381E-13
+
+    TOTAL POWER DISSIPATION   8.55E-02  WATTS
+
+
+**** 01/31/18 19:19:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 4 Fig 1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** JFETS
+
+
+NAME         J_J1      
+MODEL        J2N3819   
+ID           8.55E-03 
+VGS          0.00E+00 
+VDS          1.45E+00 
+GM           3.76E-03 
+GDS          4.09E-03 
+CGS          2.41E-12 
+CGD          1.16E-12 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .09
+

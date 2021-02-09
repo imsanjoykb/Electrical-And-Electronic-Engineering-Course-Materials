@@ -1,0 +1,23 @@
+* E:\STUDY\3rd Semester\SIMULATION\Schematic2.sch
+
+* Schematics Version 9.2
+* Sun Jan 28 12:15:22 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V1 0 10 .1 
++ LIN I_I1 0 1mA .2mA 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Schematic2.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

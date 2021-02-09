@@ -1,0 +1,186 @@
+
+**** 01/31/18 22:48:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 5 Fig 2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Jan 31 22:48:08 2018
+
+
+
+** Analysis setup **
+.tran 0ns 1000ns
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ex 5 Fig 2.net"
+
+
+
+**** INCLUDING "Ex 5 Fig 2.net" ****
+* Schematics Netlist *
+
+
+
+J_J1         $N_0003 $N_0001 $N_0002 J2N3822 
+C_C2         $N_0003 o  .47u  
+V_VDD         $N_0004 0 20V
+V_Vin         i 0  
++SIN 0 150mV 100KHz 0 0 0
+R_R4         0 $N_0002  3.3k  
+R_R2         0 $N_0005  2.7Meg  
+C_C4         0 $N_0002  .47u  
+C_C1         i $N_0001  .47u  
+R_R1         $N_0005 $N_0004  6.8Meg  
+R_R3         $N_0003 $N_0004  2.7k  
+R_RL         0 o  1k  
+
+**** RESUMING "Ex 5 Fig 2.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 01/31/18 22:48:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 5 Fig 2.sch
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N3822         
+               NJF             
+         VTO   -1.962        
+        BETA    1.100000E-03 
+      LAMBDA    4.090000E-03 
+          IS  181.300000E-15 
+         ISR    1.747000E-12 
+       ALPHA    2.543000E-06 
+          VK  152.2          
+          RD    1            
+          RS    1            
+         CGD    4.000000E-12 
+         CGS    4.627000E-12 
+           M     .3114       
+          PB     .5          
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF   10.200000E-18 
+
+
+**** 01/31/18 22:48:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 5 Fig 2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    i)    0.0000  (    o)    0.0000  ($N_0001)   10.5230                       
+
+($N_0002)   10.4800                   ($N_0003)   11.4250                       
+
+($N_0004)   20.0000                   ($N_0005)    5.6842                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDD       -3.178E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   6.36E-02  WATTS
+
+
+**** 01/31/18 22:48:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 5 Fig 2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** JFETS
+
+
+NAME         J_J1      
+MODEL        J2N3822   
+ID           3.18E-03 
+VGS          4.25E-02 
+VDS          9.45E-01 
+GM           2.07E-03 
+GDS          2.36E-03 
+CGS          4.75E-12 
+CGD          2.90E-12 
+**** 01/31/18 22:48:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * E:\STUDY\3rd Semester\SIMULATION\Ex 5 Fig 2.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    i)    0.0000  (    o)    0.0000  ($N_0001)   10.5230                       
+
+($N_0002)   10.4800                   ($N_0003)   11.4250                       
+
+($N_0004)   20.0000                   ($N_0005)    5.6842                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDD       -3.178E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   6.36E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .06
+
