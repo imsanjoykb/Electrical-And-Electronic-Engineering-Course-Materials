@@ -12,3 +12,5 @@ vlsi
 Biomedical Engineering
 
 Power Electronic
+
+Industrial Automation
