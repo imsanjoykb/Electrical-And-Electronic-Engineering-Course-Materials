@@ -14,3 +14,5 @@ Biomedical Engineering
 Power Electronic
 
 Industrial Automation
+
+Programmable Logic Design
