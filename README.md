@@ -15,4 +15,6 @@ Power Electronic
 
 Industrial Automation
 
-Programmable Logic Design
+Programmable Logic Designr
+
+Solid State Device
