@@ -18,3 +18,5 @@ Industrial Automation
 Programmable Logic Designr
 
 Solid State Device
+
+Circuit Integration
