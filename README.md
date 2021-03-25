@@ -27,4 +27,4 @@ Digital signal processing
 
 Analog Signal Processing
 
-Liner System
+Linear System
