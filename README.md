@@ -34,3 +34,5 @@ Materials Engineering
 PCB Design Report
 
 Linear System at DE
+
+Industrial Automation
