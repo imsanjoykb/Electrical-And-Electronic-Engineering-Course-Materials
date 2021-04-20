@@ -38,3 +38,5 @@ Linear System at DE
 Industrial Automation
 
 Matlab Course
+
+Circuit design using orcad
