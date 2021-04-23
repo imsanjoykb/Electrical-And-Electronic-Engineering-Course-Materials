@@ -40,3 +40,5 @@ Industrial Automation
 Matlab Course
 
 Circuit design using orcad
+
+Power Electronic Part 2
